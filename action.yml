@@ -1,0 +1,13 @@
+name: '"Deploy container to AWS Lambda" Action For GitHub Actions'
+description: 'Re-deploy AWS Lambda function with new container image URI'
+branding:
+  icon: 'cloud'
+  color: 'orange'
+inputs:
+  aws-lambda-function-name:
+    required: true
+  container-image-uri:
+    required: true
+runs:
+  using: 'node12'
+  main: 'dist/index.js'

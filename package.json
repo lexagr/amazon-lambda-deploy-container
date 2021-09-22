@@ -1,0 +1,30 @@
+{
+  "name": "amazon-lambda-deploy-container",
+  "version": "1.0.0",
+  "description": "Deploy container to AWS Lambda",
+  "main": "lib/deploy.js",
+  "scripts": {
+    "build": "tsc && ncc build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lexagr/amazon-lambda-deploy-container.git"
+  },
+  "keywords": [],
+  "author": "lexagr",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lexagr/amazon-lambda-deploy-container/issues"
+  },
+  "homepage": "https://github.com/lexagr/amazon-lambda-deploy-container#readme",
+  "devDependencies": {
+    "@types/node": "^16.9.6",
+    "ts-node": "^10.2.1",
+    "typescript": "^4.4.3"
+  },
+  "dependencies": {
+    "@actions/core": "^1.5.0",
+    "aws-sdk": "^2.992.0"
+  }
+}
